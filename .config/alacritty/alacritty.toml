@@ -23,7 +23,7 @@ style = "Italic"
 
 # ➕ Terminal environment
 [env]
-TERM = "alacritty"
+TERM = "xterm-256color"
 
 # 🖱 Mouse behavior
 [mouse]
