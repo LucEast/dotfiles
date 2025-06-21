@@ -180,7 +180,7 @@ ignore_base = false
 disabled = false
 time_format = "%R"
 style = "bg:lavender"
-format = '[](fg:#ffffff bg:none)[](fg:lavender bg:#ffffff)[](fg:#ffffff bg:$style)[ $time](fg:crust bg:lavender)[](fg:lavender bg:none)'
+format = '[](fg:#ffffff bg:none)[](fg:lavender bg:#ffffff)[](fg:#ffffff bg:$style)[ $time](fg:crust bg:lavender)[](fg:lavender bg:none) '
 
 [line_break]
 disabled = false
