@@ -35,9 +35,9 @@ function d () {
 # check if eza exists on the system
 if command -v eza &>/dev/null; then
     # If eza exists, create the alias with icons and long format
-    alias l='eza --group-directories-first --icons -la'
+    alias l='eza --group-directories-first --icons -lag'
     alias lt='eza --group-directories-first --icons -la -T'
-    alias ll='eza --group-directories-first --icons -l'
+    alias ll='eza --group-directories-first --icons -lg'
 else
     # If eza does not exist, fallback to ls with long format
     alias ll='ls -lah'
