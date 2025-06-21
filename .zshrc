@@ -115,6 +115,12 @@ export PATH=$HOME/gems/bin:$PATH
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Aktiviere emacs-Keymap für normale Tastenkombis
+bindkey -e
+
+# Option + → / ← für Wortnavigation
+bindkey "\e[1;3C" forward-word
+bindkey "\e[1;3D" backward-word
 
 if type brew &>/dev/null
 then

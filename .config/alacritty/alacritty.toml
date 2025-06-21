@@ -1,0 +1,135 @@
+# 🎨 Theme
+[general]
+import = ["~/.config/alacritty/themes/catppuccin-macchiato.toml"]
+live_config_reload = true
+
+# 🔤 Font settings
+[font]
+builtin_box_drawing = true
+size = 13.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+style = "Bold"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[font.italic]
+style = "Italic"
+
+# ➕ Terminal environment
+[env]
+TERM = "alacritty"
+
+# 🖱 Mouse behavior
+[mouse]
+hide_when_typing = true
+
+# 🖋 Cursor style
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "Always"
+shape = "Beam"
+
+# 📜 Scrolling
+[scrolling]
+history = 100000
+multiplier = 6
+
+# 🔍 Text selection
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+# 🖥️ Window behavior
+[window]
+dynamic_title = true
+opacity = 0.8
+title = "Alacritty"
+blur = true
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 180
+lines = 45
+
+# 🌈 Color options
+[colors]
+draw_bold_text_with_bright_colors = true
+
+# 🔗 URL hints
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+mouse.enabled = true
+binding = { key = "U", mods = "Control|Shift" }
+post_processing = true
+persist = false
+regex = "(https?://[^\"]+)"
+
+# ⌨️ Keybindings
+[[keyboard.bindings]]
+action = "Paste"
+key = "Y"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "W"
+mods = "Alt"
+
+### Pane navigation within tmux (option+command+arrowkeys) ###
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt|Command"
+chars = "\u001b[1;7D"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt|Command"
+chars = "\u001b[1;7C"
+
+[[keyboard.bindings]]
+key = "Up"
+mods = "Alt|Command"
+chars = "\u001b[1;7A"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Alt|Command"
+chars = "\u001b[1;7B"
+
+### Alt (Option) + Arrow → Shell word navigation ###
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+action = "ReceiveChar"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+action = "ReceiveChar"
+
+[[keyboard.bindings]]
+key = "Up"
+mods = "Alt"
+action = "ReceiveChar"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Alt"
+action = "ReceiveChar"
+
+# 🐚 Default shell
+[terminal.shell]
+program = "/bin/zsh"
+args = ["--login"]
