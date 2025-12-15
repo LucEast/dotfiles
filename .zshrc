@@ -79,7 +79,7 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting kubectl)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -181,4 +181,23 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export LOCAL_BIN="$HOME/.local/bin"
 export PATH="$LOCAL_BIN:$PATH"
 #
+
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/lucas/.lmstudio/bin"
+# End of LM Studio CLI section
+
+# --- Ghostty keybindings (zsh) ---
+bindkey -e  # emacs-style keymap
+
+# Delete single character
+bindkey '^[[3~' delete-char
+
+# Ctrl + Arrow (word navigation)
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
+# Ctrl + Backspace / Ctrl + Delete (word delete)
+bindkey '^H'        backward-kill-word
+bindkey '^[[3;5~'   kill-word
 
