@@ -1,4 +1,15 @@
+# Theme 
 theme = catppuccin-macchiato.conf
 
-
+# Font
 font-family = "JetBrainsMono Nerd Font Mono"
+
+# Window-Style
+background-opacity = 0.96
+background-blur = true
+unfocused-split-opacity = 0.3
+window-height = 45
+window-width = 170
+
+keybind = global:cmd+shift+option+enter=toggle_quick_terminal
+quick-terminal-position = center
